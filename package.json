@@ -1,0 +1,8 @@
+{
+"name": "reaction-bot",
+"version": "1.0.0",
+"description": "Reaction",
+"main": "bot.js",
+"author": "Alex Parrotto",
+"dependencies": {}
+}
