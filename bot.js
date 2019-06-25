@@ -122,7 +122,9 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   });
               }
             break;
-            // Just add any case commands if you want to..
+
+            case 'help':
+              bot.sendMessage({to: channelID, message: 'Type !angry, !confused, !excited, !retaliation, or !smug for a spicy reaction image'})
          }
      }
 });
