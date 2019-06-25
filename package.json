@@ -1,8 +1,11 @@
 {
-"name": "reaction-bot",
-"version": "1.0.0",
-"description": "Reaction",
-"main": "bot.js",
-"author": "Alex Parrotto",
-"dependencies": {}
+  "name": "reaction-bot",
+  "version": "1.0.0",
+  "description": "Reaction",
+  "main": "bot.js",
+  "author": "Alex Parrotto",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "winston": "^3.2.1"
+  }
 }
