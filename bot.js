@@ -12,6 +12,7 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
+
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
@@ -23,7 +24,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
         // Get random number
-        var random = getRndInteger(0,3);
+        var random = getRndInteger(0,4);
         args = args.splice(1);
         switch(cmd) {
             // Send random angry reaction image
@@ -45,6 +46,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/angry/Angry_Pikachu.PNG'
+                  });
+                  break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/angry/angry_pepe.png'
                   });
                   break;
               }
@@ -71,6 +78,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     file: 'images/confused/Questioning.PNG'
                   });
                   break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/confused/question.PNG'
+                  });
+                  break;
               }
             break;
 
@@ -92,6 +105,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/excited/luigi_disco.jpg'
+                  });
+                  break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/excited/surreal_spongebob.jpg'
                   });
                   break;
               }
@@ -117,6 +136,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     file: 'images/retaliation/religious.jpg'
                   });
                   break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/retaliation/anti_thot.png'
+                  });
+                  break;
               }
             break;
 
@@ -138,6 +163,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/sad/sadcat.jpg'
+                  });
+                  break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/sad/sad_shaggy.jpg'
                   });
                   break;
               }
@@ -163,6 +194,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     file: 'images/scared/patrick_scared.PNG'
                   });
                   break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/scared/jerry.jpg'
+                  });
+                  break;
               }
             break;
 
@@ -184,6 +221,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/smug/smug.jpg'
+                  });
+                  break;
+                case 3:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/smug/anime_smug.jpg'
                   });
                   break;
               }
