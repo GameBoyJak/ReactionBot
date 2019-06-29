@@ -40,11 +40,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/angry/Salt_Nut.png'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/angry/Angry_Pikachu.PNG'
                   });
+                  break;
               }
             break;
 
@@ -61,11 +63,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/confused/Tom.jpg'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/confused/Questioning.PNG'
                   });
+                  break;
               }
             break;
 
@@ -82,11 +86,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/excited/super_nut.jpg'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/excited/luigi_disco.jpg'
                   });
+                  break;
               }
             break;
 
@@ -103,11 +109,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/retaliation/Peace.JPG'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/retaliation/religious.jpg'
                   });
+                  break;
               }
             break;
 
@@ -124,11 +132,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/sad/sad_pepe.png'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/sad/sadcat.jpg'
                   });
+                  break;
               }
             break;
 
@@ -145,11 +155,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/scared/fear_hamster.jpg'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/scared/patrick_scared.PNG'
                   });
+                  break;
               }
             break;
 
@@ -166,11 +178,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/smug/Surreal_Pepe.PNG'
                   });
+                  break;
                 case 2:
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/smug/smug.jpg'
                   });
+                  break;
               }
             break;
 
