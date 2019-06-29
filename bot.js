@@ -23,7 +23,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == '!') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
-        var random = getRndInteger(0,2);
+        var random = getRndInteger(0,3);
         args = args.splice(1);
         switch(cmd) {
             // send random angry reaction image
@@ -40,21 +40,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/angry/Salt_Nut.png'
                   });
-              }
-            break;
-
-            case 'angry':
-              switch(random){
-                case 0:
+                case 2:
                   bot.uploadFile({
                     to: channelID,
-                    file: 'images/angry/negative_cat.jpg'
-                  });
-                  break;
-                case 1:
-                  bot.uploadFile({
-                    to: channelID,
-                    file: 'images/angry/Salt_Nut.png'
+                    file: 'images/angry/Angry_Pikachu.PNG'
                   });
               }
             break;
@@ -72,6 +61,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/confused/Tom.jpg'
                   });
+                case 2:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/confused/Questioning.PNG'
+                  });
               }
             break;
 
@@ -87,6 +81,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                   bot.uploadFile({
                     to: channelID,
                     file: 'images/excited/super_nut.jpg'
+                  });
+                case 2:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/excited/luigi_disco.jpg'
                   });
               }
             break;
@@ -104,6 +103,53 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/retaliation/Peace.JPG'
                   });
+                case 2:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/retaliation/religious.jpg'
+                  });
+              }
+            break;
+
+            case 'sad':
+              switch(random){
+                case 0:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/sad/Captain.PNG'
+                  });
+                  break;
+                case 1:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/sad/sad_pepe.png'
+                  });
+                case 2:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/sad/sadcat.jpg'
+                  });
+              }
+            break;
+
+            case 'scared':
+              switch(random){
+                case 0:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/scared/fear_cat.jpg'
+                  });
+                  break;
+                case 1:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/scared/fear_hamster.jpg'
+                  });
+                case 2:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/scared/patrick_scared.PNG'
+                  });
               }
             break;
 
@@ -120,11 +166,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     file: 'images/smug/Surreal_Pepe.PNG'
                   });
+                case 2:
+                  bot.uploadFile({
+                    to: channelID,
+                    file: 'images/smug/smug.jpg'
+                  });
               }
             break;
 
             case 'help':
-              bot.sendMessage({to: channelID, message: 'Type !angry, !confused, !excited, !retaliation, or !smug for a spicy reaction image'})
+              bot.sendMessage({to: channelID, message: 'Type !angry, !confused, !excited, !retaliation, !sad, !scared, or !smug for a spicy reaction image'})
          }
      }
 });
