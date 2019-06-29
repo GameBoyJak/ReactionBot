@@ -18,15 +18,15 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 bot.on('message', function (user, userID, channelID, message, evt) {
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
+    // Listen for messages that will start with `!`
     if (message.substring(0, 1) == '!') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
+        // Get random number
         var random = getRndInteger(0,3);
         args = args.splice(1);
         switch(cmd) {
-            // send random angry reaction image
+            // Send random angry reaction image
             case 'angry':
               switch(random){
                 case 0:
@@ -50,6 +50,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
               }
             break;
 
+            // Send random confused reaction image
             case 'confused':
               switch(random){
                 case 0:
